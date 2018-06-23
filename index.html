@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head></head>
+	<body>
+		<div id="ele">
+		  <input v-model="test"/>
+		  {{test}}
+		</div>
+		<script src="./src/observer.js"></script>
+		<script src="./src/watcher.js"></script>
+		<script src="./src/compile.js"></script>
+		<script src="./src/mvvm.js"></script>
+		<script>
+		  var vm = new MVVM({
+		    el:'ele',
+		    data(){
+		      return {
+		        test:'123'
+		      }
+		    }
+		  })
+		</script>
+	</body>
+</html>
